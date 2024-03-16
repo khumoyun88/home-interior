@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  max-width: 144rem;
+  margin: auto;
+  border: 1px solid blue;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  font-family: "Inter", sans-serif;
+  color: rgb(108, 114, 117);
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  list-style-type: none;
+}
+
+a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(108, 114, 117);
+}
+
+header {
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 1.8rem;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > div {
+  width: 14rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > div button {
+  border: none;
+  background-color: inherit;
+}
+header > ul:nth-child(2) {
+  width: 32.4rem;
+  height: 2.4rem;
+  gap: 2rem;
+}
+header > ul:last-child {
+  gap: 1rem;
+}
+header > ul:last-child p {
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 10%;
+  border-radius: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 39.2rem;
+  background-image: url(./img/main_bc_img.png);
+  background-size: cover;
+  margin: auto;
+}
+main h1 {
+  font-size: 5.4rem;
+  font-weight: 500;
+  line-height: 5.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-block: 2.4rem;
+}
+
+.contend {
+  width: 90%;
+  margin: auto;
+}
+.contend > div:first-child {
+  width: 100%;
+  height: 4rem;
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contend > div:first-child ul {
+  width: 153px;
+}
+.contend > div:first-child div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 29.6rem;
+}
+.contend > div:first-child div p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-weight: 700;
+}
+.contend .cards > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+.contend .cards > div > div {
+  width: 25rem;
+  flex-grow: 1;
+  margin-block: 2rem;
+}
+.contend .cards > div > div img {
+  width: 100%;
+}
+.contend .cards > div > div h3 {
+  margin-block: 1.3rem;
+}
+.contend button {
+  display: block;
+  width: 16.3rem;
+  height: 4rem;
+  border: 1px solid rgb(20, 23, 24);
+  border-radius: 8rem;
+  margin: 8rem auto;
+}
+
+.join {
+  width: 100%;
+  height: 36rem;
+  background-image: url(./img/join_bc_img.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.join h3 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+.join h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 3rem;
+  margin-bottom: 3.2rem;
+}
+.join > div {
+  width: 44.8rem;
+  height: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(108, 114, 117);
+  color: rgb(108, 114, 117);
+}
+.join > div > div {
+  display: flex;
+}
+.join > div > div span {
+  margin-right: 1rem;
+}
+.join > div > div input {
+  border: none;
+  background-color: inherit;
+  font-size: 1.6rem;
+}
+.join > div button {
+  border: none;
+  color: inherit;
+  font-size: 1.6rem;
+  background-color: transparent;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  background-color: #000;
+  height: 25rem;
+}
+footer > div:first-child {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div:first-child > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > div:first-child > div img {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 1px solid gray;
+}
+footer > div:first-child ul {
+  width: 32.2rem;
+}
+footer > div:last-child {
+  width: 90%;
+  height: 5.6rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+}
+footer > div:last-child div:first-child {
+  width: 48.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+footer > div:last-child div:last-child {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  header .hamburger {
+    display: block;
+  }
+  header ul:nth-child(2) {
+    display: none;
+  }
+  header ul:last-child li:first-child, header ul:last-child li:nth-child(2) {
+    display: none;
+  }
+  .contend > div:first-child {
+    width: 100%;
+    height: 4.8rem;
+    border: 2px solid gray;
+    border-radius: 0.8rem;
+  }
+  .contend > div:first-child ul {
+    width: 100%;
+  }
+  .contend > div:first-child ul li:first-child {
+    margin: auto;
+  }
+  .contend > div:first-child ul li:last-child {
+    display: none;
+  }
+  .contend > div:first-child > div {
+    display: none;
+  }
+  .join {
+    background-image: none;
+  }
+  .join h3 {
+    font-size: 2.8rem;
+  }
+  .join h6 {
+    font-size: 1.4rem;
+  }
+  .join > div {
+    width: 31rem;
+  }
+  footer {
+    height: 66.5rem;
+  }
+  footer > div:first-child {
+    flex-direction: column;
+    height: 36rem;
+  }
+  footer > div:first-child > div {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+  footer > div:first-child > div img {
+    margin-right: 0rem;
+    padding-right: 0rem;
+    border-right: none;
+    border-bottom: 1px solid gray;
+  }
+  footer > div:first-child ul {
+    width: 32.2rem;
+    height: 23.8rem;
+    flex-direction: column;
+  }
+  footer > div:last-child {
+    justify-content: space-evenly;
+    height: 20.2rem;
+    border-top: 1px solid gray;
+    flex-direction: column-reverse;
+  }
+  footer > div:last-child div:first-child {
+    flex-direction: column-reverse;
+    height: 10.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

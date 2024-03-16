@@ -1,0 +1,462 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$mainFont:"Poppins", sans-serif;
+$secondaryFont:"Inter", sans-serif;
+
+html{
+    font-size: 10px;
+}
+
+body{
+    max-width: 144rem;
+    margin: auto;
+    border: 1px solid blue;
+    font-family: $mainFont;
+}
+
+
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    font-family: $secondaryFont;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    font-family: $secondaryFont;
+    color: rgba(108, 114, 117, 1);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        list-style-type: none;
+    };
+}
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgba(108, 114, 117, 1);
+}
+
+
+
+// -------------Header section---------
+header{
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 1.8rem;
+    font-family: $secondaryFont;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >div{
+        width: 14rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            border: none;
+            background-color: inherit;
+        }
+    }
+
+    >ul:nth-child(2){
+        width: 32.4rem;
+        height: 2.4rem;
+        gap: 2rem;
+    }
+
+    >ul:last-child{
+        gap: 1rem;
+
+        p{
+            width: 2.2rem;
+            height: 2.2rem;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            padding: 10%;
+            border-radius: 100px;
+        }
+        
+    }
+}
+
+// -------------Main section-----------
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 39.2rem;
+    background-image: url(./img/main_bc_img.png);
+    background-size: cover;
+    margin: auto;
+
+    h1{
+        font-size: 5.4rem;
+        font-weight: 500;
+        line-height: 5.8rem;
+        font-family: $mainFont;
+        margin-block: 2.4rem;
+
+    }
+
+
+
+}
+
+// -------------Contend section---------
+.contend{
+    width: 90%;
+    margin: auto;
+
+    >div:first-child{
+        width: 100%;
+        height: 4rem;
+        margin-top: 2.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            width:153px;
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 29.6rem;
+
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: black;
+                font-weight: 700;
+            };
+
+
+        }
+
+
+    }
+
+    .cards{
+
+        >div{ 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 2.5rem;
+            // flex-grow: 1;
+
+            >div{
+                width:25rem;
+                flex-grow: 1;
+                margin-block: 2rem;
+                
+    
+                img{
+                    width: 100%;
+                }
+    
+                h3{
+                    margin-block:1.3rem ;
+                }   
+            } 
+        }
+
+    }
+
+    button{
+        display: block;
+        width: 16.3rem;
+        height: 4rem;
+        border: 1px solid rgba(20, 23, 24, 1);
+        border-radius: 8rem;
+        margin: 8rem auto;
+    }
+
+}
+
+// -------------Join section------------
+.join{
+    width: 100%;
+    height:36rem;
+    background-image: url(./img/join_bc_img.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        font-size: 4rem;
+        line-height: 4.4rem;
+        font-family: $mainFont;
+        margin-bottom: 0.8rem;
+        font-weight: 500;
+    }
+    h6{
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: $secondaryFont;
+        line-height: 3rem;
+        margin-bottom: 3.2rem;
+    }
+
+    >div{
+        width: 44.8rem;
+        height: 5.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(108, 114, 117, 1);
+        color:rgba(108, 114, 117, 1);
+
+
+        >div{
+            display: flex;
+
+            span{
+                margin-right: 1rem;
+            }
+
+            input{
+                border: none;
+                background-color: inherit;
+                font-size: 1.6rem;
+            }
+
+
+        }
+
+        button{
+            border: none;
+            color:inherit ;
+            font-size: 1.6rem;
+            background-color: transparent;
+
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+}
+
+// ------------Footer section------------
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    background-color: #000;
+    height: 25rem;
+
+    >div:first-child{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                margin-right: 1rem;
+                padding-right:1rem ;
+                border-right: 1px solid gray;
+            
+            }
+        }
+
+        ul{
+            width: 32.2rem;
+        }
+    }
+
+
+    >div:last-child{
+        width: 90%;
+        height: 5.6rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid gray; 
+
+
+        div:first-child{
+            width: 48.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+
+        div:last-child{
+            width: 12rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+    }
+}
+
+
+
+
+// -----------------make it Responsive--------------------------------------------
+
+@media only screen and (min-width: 700px){
+    .hamburger{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    header{
+        .hamburger{
+            display:block;
+        }
+            
+        ul:nth-child(2){
+            display: none;
+        }
+
+        ul:last-child{
+            li:first-child,li:nth-child(2){
+                display: none;
+            }
+        }
+    }
+
+    .contend{
+        >div:first-child{
+            // display: none;
+            width: 100%;
+            height: 4.8rem;
+            border:2px solid gray;
+            border-radius: 0.8rem;
+
+            ul{
+                width: 100%;
+                li:first-child{
+                    margin: auto;
+                }
+
+                li:last-child{
+                    display: none;
+                }
+            }
+            >div{
+                
+                display: none;
+            }
+
+
+        }
+    }
+
+    .join{
+        background-image: none;
+        // max-width: 31rem;
+        // margin: auto;
+        h3{
+            font-size: 2.8rem;
+        }
+        h6{
+            font-size: 1.4rem;
+        }
+        >div{
+            width: 31rem;
+
+        }
+    }
+
+    footer{
+        height:66.5rem ;
+
+        >div:first-child{
+            flex-direction: column;
+            height: 36rem;
+            
+            >div{
+                gap: 1.5rem;
+                flex-direction: column;
+    
+                img{
+                    margin-right: 0rem;
+                    padding-right:0rem ;
+                    border-right: none;
+                    border-bottom: 1px solid gray;
+                }
+            }
+    
+            ul{
+                width: 32.2rem;
+                height: 23.8rem;
+                flex-direction: column;
+            }
+        }
+
+        >div:last-child{
+            justify-content: space-evenly;
+            height: 20.2rem;
+            border-top: 1px solid gray;
+            flex-direction: column-reverse;
+    
+            div:first-child{
+                flex-direction: column-reverse;
+                height: 10.8rem;
+            }
+        }
+
+
+    }
+    
+}
+
+
+
+
+
+
+
