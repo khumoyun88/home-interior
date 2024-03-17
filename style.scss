@@ -13,7 +13,6 @@ html{
 body{
     max-width: 144rem;
     margin: auto;
-    border: 1px solid blue;
     font-family: $mainFont;
 }
 
@@ -62,7 +61,7 @@ header{
         width: 14rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
 
         button{
             border: none;
@@ -314,7 +313,7 @@ footer{
 
 
         div:first-child{
-            width: 48.5rem;
+            // width: 48.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -366,6 +365,10 @@ footer{
                 display: none;
             }
         }
+    }
+
+    main{
+        background-image: url(./img/main_bc_img_responsive.png);
     }
 
     .contend{

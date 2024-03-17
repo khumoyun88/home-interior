@@ -11,7 +11,6 @@ html {
 body {
   max-width: 144rem;
   margin: auto;
-  border: 1px solid blue;
   font-family: "Poppins", sans-serif;
 }
 
@@ -58,7 +57,7 @@ header > div {
   width: 14rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 header > div button {
   border: none;
@@ -246,7 +245,6 @@ footer > div:last-child {
   border-top: 1px solid gray;
 }
 footer > div:last-child div:first-child {
-  width: 48.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -279,6 +277,9 @@ footer > div:last-child div:last-child {
   }
   header ul:last-child li:first-child, header ul:last-child li:nth-child(2) {
     display: none;
+  }
+  main {
+    background-image: url(./img/main_bc_img_responsive.png);
   }
   .contend > div:first-child {
     width: 100%;
